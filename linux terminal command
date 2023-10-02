@@ -1,0 +1,14 @@
+Reading package lists... Done
+root@DESKTOP-aliza:/home/aliza#
+root@DESKTOP-aliza:/home/aliza# pwd
+/home/aliza
+root@DESKTOP-aliza:/home/aliza# sadjgasjg
+sadjgasjg: command not found
+root@DESKTOP-aliza:/home/aliza# whoami
+root
+root@DESKTOP-aliza:/home/aliza# man whoami
+root@DESKTOP-aliza:/home/aliza# man
+What manual page do you want?
+For example, try 'man man'.
+root@DESKTOP-aliza:/home/aliza# man man
+root@DESKTOP-aliza:/home/aliza# clear
