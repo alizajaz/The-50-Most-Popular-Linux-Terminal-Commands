@@ -12,3 +12,96 @@ What manual page do you want?
 For example, try 'man man'.
 root@DESKTOP-aliza:/home/aliza# man man
 root@DESKTOP-aliza:/home/aliza# clear
+aliza@DESKTOP-aliza:~$ ls
+Desktop
+aliza@DESKTOP-aliza:~$ ls Desktop
+aliza@DESKTOP-aliza:~$ mkdir wildlife
+aliza@DESKTOP-aliza:~$ ls
+Desktop  wildlife
+aliza@DESKTOP-aliza:~$ mkdir plant
+aliza@DESKTOP-aliza:~$ ls
+Desktop  plant  wildlife
+aliza@DESKTOP-aliza:~$ ls /home/aliza/Desktop
+
+
+aliza@DESKTOP-aliza:~$ ls
+Desktop  plant  wildlife
+aliza@DESKTOP-aliza:~$ ls -l
+total 0
+drwxr-xr-x 1 root  root  512 Oct  2 12:32 Desktop
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 plant
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 wildlife
+aliza@DESKTOP-aliza:~$ man ls
+aliza@DESKTOP-aliza:~$ ls -a
+.  ..  .bash_logout  .bashrc  .lesshst  .motd_shown  .profile  .sudo_as_admin_successful  Desktop  plant  wildlife
+aliza@DESKTOP-aliza:~$ ls -al
+total 8
+drwxr-x--- 1 aliza aliza  512 Oct  2 12:50 .
+drwxr-xr-x 1 root  root   512 Oct  2 11:58 ..
+-rw-r--r-- 1 aliza aliza  220 Oct  2 11:58 .bash_logout
+-rw-r--r-- 1 aliza aliza 3771 Oct  2 11:58 .bashrc
+-rw------- 1 aliza aliza   20 Oct  2 12:50 .lesshst
+-rw-r--r-- 1 aliza aliza    0 Oct  2 11:59 .motd_shown
+-rw-r--r-- 1 aliza aliza  807 Oct  2 11:58 .profile
+-rw-r--r-- 1 aliza aliza    0 Oct  2 12:01 .sudo_as_admin_successful
+drwxr-xr-x 1 root  root   512 Oct  2 12:32 Desktop
+drwxr-xr-x 1 aliza aliza  512 Oct  2 12:47 plant
+drwxr-xr-x 1 aliza aliza  512 Oct  2 12:47 wildlife
+aliza@DESKTOP-aliza:~$
+
+
+
+aliza@DESKTOP-aliza:~$ pwd
+/home/aliza
+aliza@DESKTOP-aliza:~$ ls
+Desktop  plant  wildlife
+aliza@DESKTOP-aliza:~$ cd Desktop
+aliza@DESKTOP-aliza:~/Desktop$ ls
+aliza@DESKTOP-aliza:~/Desktop$ pwd
+/home/aliza/Desktop
+aliza@DESKTOP-aliza:~/Desktop$ cd Mealdiary
+-bash: cd: Mealdiary: No such file or directory
+aliza@DESKTOP-aliza:~/Desktop$ mkdir MealDiary
+mkdir: cannot create directory ‘MealDiary’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop$ sudo mkdir MealDiary
+[sudo] password for aliza:
+aliza@DESKTOP-aliza:~/Desktop$ ls
+MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ pwd
+/home/aliza/Desktop
+aliza@DESKTOP-aliza:~/Desktop$ cd MealDiary
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ pwd
+/home/aliza/Desktop/MealDiary
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ for day in sun mon tue wed thu fri sat; do mkdir $day; done
+mkdir: cannot create directory ‘sun’: Permission denied
+mkdir: cannot create directory ‘mon’: Permission denied
+mkdir: cannot create directory ‘tue’: Permission denied
+mkdir: cannot create directory ‘wed’: Permission denied
+mkdir: cannot create directory ‘thu’: Permission denied
+mkdir: cannot create directory ‘fri’: Permission denied
+mkdir: cannot create directory ‘sat’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ sudo mkdir sun mon tue wed thu fri sat
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ ls
+fri  mon  sat  sun  thu  tue  wed
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ ls
+fri  mon  sat  sun  thu  tue  wed
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ cd fri
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ ls
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ sudo mkdir Breakfast Lunch Dinner
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ ls
+Breakfast  Dinner  Lunch
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ ls
+Breakfast  Dinner  Lunch
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ cd Breakfast
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri/Breakfast$ ls
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri/Breakfast$ cd..
+cd..: command not found
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri/Breakfast$ cd ..
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ ls
+Breakfast  Dinner  Lunch
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ cd ..
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ ls
+fri  mon  sat  sun  thu  tue  wed
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ cd ..
+aliza@DESKTOP-aliza:~/Desktop$
+
