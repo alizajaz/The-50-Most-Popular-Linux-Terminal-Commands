@@ -67,3 +67,6 @@ aliza@DESKTOP-aliza:~$ sudo su
 root@DESKTOP-aliza:/home/aliza# apt-get update
 
 
+
+
+
