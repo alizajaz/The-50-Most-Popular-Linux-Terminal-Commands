@@ -19,6 +19,7 @@ WslRegisterDistribution failed with error: 0x80370102
 Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS.
 For information please visit https://aka.ms/enablevirtualization
 Press any key to continue...**
+https://answers.microsoft.com/en-us/windows/forum/all/wslregisterdistribution-failed-with-error/5fdd8aa6-175e-4a14-8fe6-07673133fd15 
 
 
 
