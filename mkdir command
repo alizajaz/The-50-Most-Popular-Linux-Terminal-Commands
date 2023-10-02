@@ -1,1 +1,51 @@
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ pwd
+/home/aliza/Desktop
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ mkdir Greenhouse
+mkdir: cannot create directory ‘Greenhouse’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop$ sudo mkdir Greenhouse
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ cd Greenhouse
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ pwd
+/home/aliza/Desktop/Greenhouse
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ mkdir winter summer
+mkdir: cannot create directory ‘winter’: Permission denied
+mkdir: cannot create directory ‘summer’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ sudo mkdir winter summer
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ mkdir summer/seeds
+mkdir: cannot create directory ‘summer/seeds’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ sudo mkdir summer/seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls summer/
+seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ man  mkdir
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ sudo mkdir winter/seeds/lettuce
+mkdir: cannot create directory ‘winter/seeds/lettuce’: No such file or directory
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ sudo mkdir -p winter/seeds/lettuce
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls winter/
+seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls winter/seeds/
+lettuce
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ mkdir ~/BLAHBlah
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ cd ~
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  plant  wildlife
+aliza@DESKTOP-aliza:~$
 
