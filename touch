@@ -1,4 +1,53 @@
+We make the empty file with touch.
+
+
 aliza@DESKTOP-aliza:~$ touch apple
 aliza@DESKTOP-aliza:~$ ls
 BLAHBlah  Desktop  apple  plant  wildlife
-aliza@DESKTOP-aliza:~$
+aliza@DESKTOP-aliza:~$ touch berries.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  berries.txt  plant  wildlife
+aliza@DESKTOP-aliza:~$ touch apple.pdf
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  plant  wildlife
+aliza@DESKTOP-aliza:~$ touch color.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  plant  wildlife
+aliza@DESKTOP-aliza:~$ touch red.pdf orange.png squash.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+
+aliza@DESKTOP-aliza:~$ touch apple.pdf
+aliza@DESKTOP-aliza:~$ touch apple.pdf
+aliza@DESKTOP-aliza:~$ man touch
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ ls -l
+total 0
+drwxr-xr-x 1 aliza aliza 512 Oct  2 13:39 BLAHBlah
+drwxr-xr-x 1 root  root  512 Oct  2 13:34 Desktop
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:46 apple
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:51 apple.pdf
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:47 berries.txt
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:48 color.txt
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 orange.png
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 plant
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 red.pdf
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 squash.txt
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 wildlife
+aliza@DESKTOP-aliza:~$ touch apple.pdf
+aliza@DESKTOP-aliza:~$ ls -l
+total 0
+drwxr-xr-x 1 aliza aliza 512 Oct  2 13:39 BLAHBlah
+drwxr-xr-x 1 root  root  512 Oct  2 13:34 Desktop
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:46 apple
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:52 apple.pdf
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:47 berries.txt
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:48 color.txt
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 orange.png
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 plant
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 red.pdf
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 squash.txt
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 wildlife
+
+
