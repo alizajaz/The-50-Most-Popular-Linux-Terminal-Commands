@@ -103,5 +103,35 @@ aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri$ cd ..
 aliza@DESKTOP-aliza:~/Desktop/MealDiary$ ls
 fri  mon  sat  sun  thu  tue  wed
 aliza@DESKTOP-aliza:~/Desktop/MealDiary$ cd ..
-aliza@DESKTOP-aliza:~/Desktop$
+aliza@DESKTOP-aliza:~/Desktop$ cd MealDiary/fri/Breakfast
+aliza@DESKTOP-aliza:~/Desktop/MealDiary/fri/Breakfast$ cd ../../..
+aliza@DESKTOP-aliza:~/Desktop$ ls
+MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ cd MealDiary
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ ls
+fri  mon  sat  sun  thu  tue  wed
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ cd..
+cd..: command not found
+aliza@DESKTOP-aliza:~/Desktop/MealDiary$ cd ..
+aliza@DESKTOP-aliza:~/Desktop$ ls
+MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ mkdir Documents
+mkdir: cannot create directory ‘Documents’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop$ sudo mkdir Documents
+[sudo] password for aliza:
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ pwd
+/home/aliza/Desktop
+aliza@DESKTOP-aliza:~/Desktop$ cd Documents
+aliza@DESKTOP-aliza:~/Desktop/Documents$ pwd
+/home/aliza/Desktop/Documents
+aliza@DESKTOP-aliza:~/Desktop/Documents$ cd ~
+aliza@DESKTOP-aliza:~$ pwd
+/home/aliza
+aliza@DESKTOP-aliza:~$
+
+
+
+
 
