@@ -13,11 +13,14 @@ Ubuntu has been installed.
 The requested operation is successful. Changes will not be effective until the system is rebooted.
 PS C:\Users\Admin>
 
-if you get error like this 
+**WslRegisterDistribution failed with error: 0x80370102**********
+**if you get error like this 
 WslRegisterDistribution failed with error: 0x80370102
 Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS.
 For information please visit https://aka.ms/enablevirtualization
-Press any key to continue...
+Press any key to continue...**
+
+
 
 Windows PowerShell
 Copyright (C) Microsoft Corporation. All rights reserved.
@@ -58,5 +61,8 @@ Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 4.4.0-19041-Microsoft x86_64)
 
 This message is shown once a day. To disable it please create the
 /home/aliza/.hushlogin file.
+aliza@DESKTOP-aliza:~$ sudo su
+[sudo] password for aliza:
+root@DESKTOP-aliza:/home/aliza# apt-get update
 
 
