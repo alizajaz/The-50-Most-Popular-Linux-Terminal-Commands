@@ -1,0 +1,400 @@
+REMOVE EMPTY DIRECTORY
+
+aliza@DESKTOP-aliza:~$ mkdir DELETEME
+aliza@DESKTOP-aliza:~$ LS
+LS: command not found
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  DELETEME  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ rmdir DELETEME
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ cd ..
+aliza@DESKTOP-aliza:/home$ ls
+aliza
+
+liza@DESKTOP-aliza:/home$ cd aliza
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ cd Desktop
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary
+aliza@DESKTOP-aliza:~/Desktop$ cd Greenhouse
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ ls
+summer  winter
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ cs summer
+Command 'cs' not found, but can be installed with:
+sudo apt install csound
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ cd summer
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ ls
+seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ rmdir seeds
+rmdir: failed to remove 'seeds': Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ touch cat dog carrot blue
+touch: cannot touch 'cat': Permission denied
+touch: cannot touch 'dog': Permission denied
+touch: cannot touch 'carrot': Permission denied
+touch: cannot touch 'blue': Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ ls
+seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ cd ..
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse$ cd summer
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ touch cat dog carrot blue
+touch: cannot touch 'cat': Permission denied
+touch: cannot touch 'dog': Permission denied
+touch: cannot touch 'carrot': Permission denied
+touch: cannot touch 'blue': Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ ls
+seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ mkdir cat dog carrot blue
+mkdir: cannot create directory ‘cat’: Permission denied
+mkdir: cannot create directory ‘dog’: Permission denied
+mkdir: cannot create directory ‘carrot’: Permission denied
+mkdir: cannot create directory ‘blue’: Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ sudo touch cat dog carrot blue
+[sudo] password for aliza:
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ ls
+blue  carrot  cat  dog  seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ rm blue
+rm: remove write-protected regular empty file 'blue'? y
+rm: cannot remove 'blue': Permission denied
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ sudo rm blue
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$ ls
+carrot  cat  dog  seeds
+aliza@DESKTOP-aliza:~/Desktop/Greenhouse/summer$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
