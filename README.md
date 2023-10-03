@@ -1,4 +1,4 @@
-# The-50-Most-Popular-Linux-Terminal-Commands
+# The-Most-Popular-Linux-Terminal-Commands
 The 50 Most Popular Linux &amp; Terminal Commands
 
 Windows Powershell> wsl --install>you will see this message > then reboot 
