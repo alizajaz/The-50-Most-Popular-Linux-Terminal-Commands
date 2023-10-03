@@ -1,0 +1,11 @@
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Desert  Documents  Greenhouse  MealDiary  VEGETABLE  today.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ cp today.txt Today_Journal.txt
+cp: -r not specified; omitting directory 'today.txt'
+aliza@DESKTOP-aliza:~/Desktop$ sudo cp today.txt Today_journal.txt
+cp: -r not specified; omitting directory 'today.txt'
+aliza@DESKTOP-aliza:~/Desktop$ sudo cp -r today.txt Today_journal.txt
+aliza@DESKTOP-aliza:~/Desktop$
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Desert  Documents  Greenhouse  MealDiary  Today_journal.txt  VEGETABLE  today.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$
