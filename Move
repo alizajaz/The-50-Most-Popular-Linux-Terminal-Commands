@@ -14,12 +14,13 @@ Documents  Greenhouse  MealDiary  Vegetable  purples.txt  tomato.js
 aliza@DESKTOP-aliza:~/Desktop$ sudo mv purples.txt Vegetable/
 aliza@DESKTOP-aliza:~/Desktop$ ls
 Documents  Greenhouse  MealDiary  Vegetable  tomato.js
+
+---------------------------------RENAME--------------------------------------------------------------------------
 aliza@DESKTOP-aliza:~/Desktop$ ls Vegetable/
 purples.txt
 aliza@DESKTOP-aliza:~/Desktop$ ls Vegetable/
 purples.txt
 aliza@DESKTOP-aliza:~/Desktop$ sudo mv Vegetable/ VEGETABLE
-aliza@DESKTOP-aliza:~/Desktop$ LS
-LS: command not found
+
 aliza@DESKTOP-aliza:~/Desktop$ ls
 Documents  Greenhouse  MealDiary  VEGETABLE  tomato.js
