@@ -25,4 +25,16 @@ aliza@DESKTOP-aliza:~/Desktop$ sudo mv Vegetable/ VEGETABLE
 aliza@DESKTOP-aliza:~/Desktop$ ls
 Documents  Greenhouse  MealDiary  VEGETABLE  tomato.js
 
------------------------------------
+-----------------------------------MOVE----------------------------------------------------------------------------------
+
+aliza@DESKTOP-aliza:~/Desktop$ sudo mkdir Desert
+aliza@DESKTOP-aliza:~/Desktop$ sudo touch pie cookie cake
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Desert  Documents  Greenhouse  MealDiary  VEGETABLE  cake  cookie  pie  today.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ sudo mv cake cookie pie Desert/
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Desert  Documents  Greenhouse  MealDiary  VEGETABLE  today.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ ls Desert/
+cake  cookie  pie
+aliza@DESKTOP-aliza:~/Desktop$
+
