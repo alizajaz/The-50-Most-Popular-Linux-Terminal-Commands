@@ -24,3 +24,5 @@ aliza@DESKTOP-aliza:~/Desktop$ sudo mv Vegetable/ VEGETABLE
 
 aliza@DESKTOP-aliza:~/Desktop$ ls
 Documents  Greenhouse  MealDiary  VEGETABLE  tomato.js
+
+-----------------------------------
