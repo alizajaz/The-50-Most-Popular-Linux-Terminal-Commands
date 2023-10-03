@@ -1,0 +1,25 @@
+
+aliza@DESKTOP-aliza:~/Desktop$ sudo rm -r brinjal
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary  purples.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ sudo mkdir brinjal
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary  brinjal  purples.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ sudo rm -r brinjal
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary  purples.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ sudo mkdir Vegetable
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary  Vegetable  purples.txt  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ sudo mv purples.txt Vegetable/
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary  Vegetable  tomato.js
+aliza@DESKTOP-aliza:~/Desktop$ ls Vegetable/
+purples.txt
+aliza@DESKTOP-aliza:~/Desktop$ ls Vegetable/
+purples.txt
+aliza@DESKTOP-aliza:~/Desktop$ sudo mv Vegetable/ VEGETABLE
+aliza@DESKTOP-aliza:~/Desktop$ LS
+LS: command not found
+aliza@DESKTOP-aliza:~/Desktop$ ls
+Documents  Greenhouse  MealDiary  VEGETABLE  tomato.js
