@@ -1,0 +1,50 @@
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ ls Desktop
+Desert  Documents  Greenhouse  MealDiary  Today_journal.txt  VEGETABLE  today.txt  tomato.js
+aliza@DESKTOP-aliza:~$ echo~
+Command 'echo~' not found, did you mean:
+  command 'echo' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+aliza@DESKTOP-aliza:~$ echo ~
+/home/aliza
+aliza@DESKTOP-aliza:~$ echo '~'
+~
+aliza@DESKTOP-aliza:~$ cd /home/aliza
+aliza@DESKTOP-aliza:~$ cd ~
+aliza@DESKTOP-aliza:~$ echo $PATH
+/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu_2204.2.33.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Microsoft MPI/Bin/:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Program Files/Python311/Scripts/:/mnt/c/Program Files/Python311/:/mnt/c/Python310/Scripts/:/mnt/c/Python310/:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/ProgramData/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/dotnet/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/130/Tools/Binn/:/mnt/c/Program Files/nodejs:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Users/Admin/Desktop/python/python-3.7.2.exe:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SDKs/TypeScript/1.0/:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/Common Files/Pleora/eBUS SDK:/mnt/c/Program Files/Common Files/Pleora/eBUS SDK:/mnt/c/Program Files/Java/jdk-11.0.2/bin:/mnt/c/Program Files/nodejs/:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Java/jdk-19/bin:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/MySQL/MySQL Shell 8.0/bin/:/mnt/c/Users/Admin/AppData/Local/Programs/Python/Python37/Scripts/:/mnt/c/Users/Admin/AppData/Local/Programs/Python/Python37/:/mnt/c/Users/Admin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Admin/AppData/Local/atom/bin:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/Admin/AppData/Local/GitHubDesktop/bin:/mnt/c/Users/Admin/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Admin/AppData/Roaming/npm:/mnt/c/Users/Admin/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA Community Edition 2022.3.2/bin:/snap/bin
+aliza@DESKTOP-aliza:~$ echo $USER
+aliza
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ echo '*'
+*
+aliza@DESKTOP-aliza:~$ echo *
+BLAHBlah Desktop apple apple.pdf berries.txt color.txt orange.png plant red.pdf squash.txt wildlife
+aliza@DESKTOP-aliza:~$ echo *.txt
+berries.txt color.txt squash.txt
+aliza@DESKTOP-aliza:~$ ls -l *.txt
+-rw-r--r-- 1 aliza aliza 0 Oct  2 13:47 berries.txt
+-rw-r--r-- 1 aliza aliza 0 Oct  2 13:48 color.txt
+-rw-r--r-- 1 aliza aliza 0 Oct  2 13:50 squash.txt
+aliza@DESKTOP-aliza:~$ echo *.??
+*.??
+aliza@DESKTOP-aliza:~$ echo *.?
+*.?
+aliza@DESKTOP-aliza:~$ echo *.???
+apple.pdf berries.txt color.txt orange.png red.pdf squash.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  Desktop  apple  apple.pdf  berries.txt  color.txt  orange.png  plant  red.pdf  squash.txt  wildlife
+aliza@DESKTOP-aliza:~$
+
+
+
+
+
+
+
+
+
+
+
