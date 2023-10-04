@@ -1,1 +1,76 @@
-d
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt  plant       strwberry
+Desktop   app.js    apple.pdf    choclate   green           red.pdf     white
+app.css   app.py    berries.txt  color.txt  orange.png      squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ sudo mkdir "Strawberry choclate" "white chocolate" "rainbow choclate"
+aliza@DESKTOP-aliza:~$ ls
+ BLAHBlah               app.html   apple.pdf     color.txt        plant               strwberry
+ Desktop                app.js     berries.txt   favFlavors.txt  'rainbow choclate'   white
+'Strawberry choclate'   app.py     blue          green            red.pdf            'white chocolate'
+ app.css                apple      choclate      orange.png       squash.txt          wildlife
+aliza@DESKTOP-aliza:~$ sudo mv "Strawberry choclate" "white chocolate" "rainbow choclate" "favFlavors.txt/"
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt  plant       strwberry
+Desktop   app.js    apple.pdf    choclate   green           red.pdf     white
+app.css   app.py    berries.txt  color.txt  orange.png      squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ ls favFlavors.txt
+'Strawberry choclate'  'rainbow choclate'  'white chocolate'
+aliza@DESKTOP-aliza:~$ sudo cp favFlavors.txt favFlavors2.txt
+cp: -r not specified; omitting directory 'favFlavors.txt'
+aliza@DESKTOP-aliza:~$ sudo cp -r favFlavors.txt/ favFlavors2.txt/
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   orange.png  squash.txt  wildlife
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  plant       strwberry
+app.css   app.py    berries.txt  color.txt  green            red.pdf     white
+aliza@DESKTOP-aliza:~$ ls favFlavors2.txt
+'Strawberry choclate'  'rainbow choclate'  'white chocolate'
+aliza@DESKTOP-aliza:~$
+
+
+---------------------------------------------------------------------
+
+
+aliza@DESKTOP-aliza:~$ rm -r 'favFlavors2.txt'
+rm: descend into write-protected directory 'favFlavors2.txt'? y
+rm: remove write-protected directory 'favFlavors2.txt/rainbow choclate'? y
+rm: cannot remove 'favFlavors2.txt/rainbow choclate': Permission denied
+rm: remove write-protected directory 'favFlavors2.txt/Strawberry choclate'? y
+rm: cannot remove 'favFlavors2.txt/Strawberry choclate': Permission denied
+rm: remove write-protected directory 'favFlavors2.txt/white chocolate'? y
+rm: cannot remove 'favFlavors2.txt/white chocolate': Permission denied
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   orange.png  squash.txt  wildlife
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  plant       strwberry
+app.css   app.py    berries.txt  color.txt  green            red.pdf     white
+aliza@DESKTOP-aliza:~$ touch favFlavors2.txt
+touch: setting times of 'favFlavors2.txt': Permission denied
+aliza@DESKTOP-aliza:~$ touch favFlavors3.txt
+aliza@DESKTOP-aliza:~$ echo 'mint' >> favFlavors3.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   green       red.pdf     white
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  orange.png  squash.txt  wildlife
+app.css   app.py    berries.txt  color.txt  favFlavors3.txt  plant       strwberry
+aliza@DESKTOP-aliza:~$ ls favFlavors3.txt
+favFlavors3.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   green       red.pdf     white
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  orange.png  squash.txt  wildlife
+app.css   app.py    berries.txt  color.txt  favFlavors3.txt  plant       strwberry
+aliza@DESKTOP-aliza:~$ cat favflavors3.txt
+cat: favflavors3.txt: No such file or directory
+aliza@DESKTOP-aliza:~$ cat favFlavors3.txt
+mint
+aliza@DESKTOP-aliza:~$ cat favFlavors2.txt
+cat: favFlavors2.txt: Is a directory
+aliza@DESKTOP-aliza:~$ touch favFlavors4.txt
+aliza@DESKTOP-aliza:~$  echo 'mint' 'apple' >> favFlavors3.txt
+aliza@DESKTOP-aliza:~$ cat favFlavors4.txt
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   favFlavors4.txt  plant       strwberry
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  green            red.pdf     white
+app.css   app.py    berries.txt  color.txt  favFlavors3.txt  orange.png       squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ diff favFlavors3.txt favFlavors4.txt
+1,2d0
+< mint
+< mint apple
+aliza@DESKTOP-aliza:~$
