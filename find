@@ -1,0 +1,218 @@
+aliza@DESKTOP-aliza:~$ man find
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   favFlavors4.txt  plant       strwberry
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  green            red.pdf     white
+app.css   app.py    berries.txt  color.txt  favFlavors3.txt  orange.png       squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ find .
+.
+./.bashrc
+./.bash_history
+./.bash_logout
+./.lesshst
+./.motd_shown
+./.profile
+./.sudo_as_admin_successful
+./app.css
+./app.html
+./app.js
+./app.py
+./apple
+./apple.pdf
+./berries.txt
+./BLAHBlah
+./blue
+./choclate
+./color.txt
+./Desktop
+./Desktop/Desert
+./Desktop/Desert/cake
+./Desktop/Desert/cookie
+./Desktop/Desert/pie
+./Desktop/Documents
+./Desktop/Greenhouse
+./Desktop/Greenhouse/summer
+./Desktop/Greenhouse/summer/apple.pdf
+./Desktop/Greenhouse/summer/berry.png
+./Desktop/Greenhouse/winter
+./Desktop/Greenhouse/winter/seeds
+./Desktop/Greenhouse/winter/seeds/lettuce
+./Desktop/MealDiary
+./Desktop/MealDiary/fri
+./Desktop/MealDiary/fri/Breakfast
+./Desktop/MealDiary/fri/Dinner
+./Desktop/MealDiary/fri/Lunch
+./Desktop/MealDiary/mon
+./Desktop/MealDiary/sat
+./Desktop/MealDiary/sun
+./Desktop/MealDiary/thu
+./Desktop/MealDiary/tue
+./Desktop/MealDiary/wed
+./Desktop/today.txt
+./Desktop/Today_journal.txt
+./Desktop/tomato.js
+./Desktop/VEGETABLE
+./Desktop/VEGETABLE/purples.txt
+./favFlavors.txt
+./favFlavors.txt/rainbow choclate
+./favFlavors.txt/Strawberry choclate
+./favFlavors.txt/white chocolate
+./favFlavors2.txt
+./favFlavors2.txt/rainbow choclate
+./favFlavors2.txt/Strawberry choclate
+./favFlavors2.txt/white chocolate
+./favFlavors3.txt
+./favFlavors4.txt
+./green
+./orange.png
+./plant
+./red.pdf
+./squash.txt
+./strwberry
+./white
+./wildlife
+aliza@DESKTOP-aliza:~$ find . -name '7'
+aliza@DESKTOP-aliza:~$ ls
+BLAHBlah  app.html  apple        blue       favFlavors.txt   favFlavors4.txt  plant       strwberry
+Desktop   app.js    apple.pdf    choclate   favFlavors2.txt  green            red.pdf     white
+app.css   app.py    berries.txt  color.txt  favFlavors3.txt  orange.png       squash.txt  wildlife
+aliza@DESKTOP-aliza:~$ touch 7
+aliza@DESKTOP-aliza:~$  find . -name '7'
+./7
+aliza@DESKTOP-aliza:~$  find . -name '*7*'
+./7
+aliza@DESKTOP-aliza:~$  find . -name '*.py'
+./app.py
+aliza@DESKTOP-aliza:~$ find . -name '*.txt'
+./berries.txt
+./color.txt
+./Desktop/today.txt
+./Desktop/Today_journal.txt
+./Desktop/VEGETABLE/purples.txt
+./favFlavors.txt
+./favFlavors2.txt
+./favFlavors3.txt
+./favFlavors4.txt
+./squash.txt
+aliza@DESKTOP-aliza:~$ ls
+7         app.css   app.py     berries.txt  color.txt        favFlavors3.txt  orange.png  squash.txt  wildlife
+BLAHBlah  app.html  apple      blue         favFlavors.txt   favFlavors4.txt  plant       strwberry
+Desktop   app.js    apple.pdf  choclate     favFlavors2.txt  green            red.pdf     white
+aliza@DESKTOP-aliza:~$ find . -type d
+.
+./BLAHBlah
+./blue
+./choclate
+./Desktop
+./Desktop/Desert
+./Desktop/Documents
+./Desktop/Greenhouse
+./Desktop/Greenhouse/summer
+./Desktop/Greenhouse/summer/apple.pdf
+./Desktop/Greenhouse/summer/berry.png
+./Desktop/Greenhouse/winter
+./Desktop/Greenhouse/winter/seeds
+./Desktop/Greenhouse/winter/seeds/lettuce
+./Desktop/MealDiary
+./Desktop/MealDiary/fri
+./Desktop/MealDiary/fri/Breakfast
+./Desktop/MealDiary/fri/Dinner
+./Desktop/MealDiary/fri/Lunch
+./Desktop/MealDiary/mon
+./Desktop/MealDiary/sat
+./Desktop/MealDiary/sun
+./Desktop/MealDiary/thu
+./Desktop/MealDiary/tue
+./Desktop/MealDiary/wed
+./Desktop/today.txt
+./Desktop/Today_journal.txt
+./Desktop/VEGETABLE
+./favFlavors.txt
+./favFlavors.txt/rainbow choclate
+./favFlavors.txt/Strawberry choclate
+./favFlavors.txt/white chocolate
+./favFlavors2.txt
+./favFlavors2.txt/rainbow choclate
+./favFlavors2.txt/Strawberry choclate
+./favFlavors2.txt/white chocolate
+./green
+./plant
+./strwberry
+./white
+./wildlife
+aliza@DESKTOP-aliza:~$ find . -type d -name '*E*'
+./Desktop/VEGETABLE
+aliza@DESKTOP-aliza:~$ find . -name 'E*'
+aliza@DESKTOP-aliza:~$ find . -name 'E*' or -name 'F*'
+find: paths must precede expression: `or'
+aliza@DESKTOP-aliza:~$ find . -type d -name '*A*'
+./BLAHBlah
+./Desktop/VEGETABLE
+aliza@DESKTOP-aliza:~$ find . -type d -iname 'E*'
+aliza@DESKTOP-aliza:~$  find . -name 'E*' -or -name 'F*'
+aliza@DESKTOP-aliza:~$  find . -name 'E*' -or -name 'T*'
+./Desktop/Today_journal.txt
+aliza@DESKTOP-aliza:~$ find  -type f -size +100k
+aliza@DESKTOP-aliza:~$  find -type f -size +200k
+aliza@DESKTOP-aliza:~$ find . -type f -exec cat{} \;
+find: ‘cat./.bashrc’: No such file or directory
+find: ‘cat./.bash_history’: No such file or directory
+find: ‘cat./.bash_logout’: No such file or directory
+find: ‘cat./.lesshst’: No such file or directory
+find: ‘cat./.motd_shown’: No such file or directory
+find: ‘cat./.profile’: No such file or directory
+find: ‘cat./.sudo_as_admin_successful’: No such file or directory
+find: ‘cat./7’: No such file or directory
+find: ‘cat./app.css’: No such file or directory
+find: ‘cat./app.html’: No such file or directory
+find: ‘cat./app.js’: No such file or directory
+find: ‘cat./app.py’: No such file or directory
+find: ‘cat./apple’: No such file or directory
+find: ‘cat./apple.pdf’: No such file or directory
+find: ‘cat./berries.txt’: No such file or directory
+find: ‘cat./color.txt’: No such file or directory
+find: ‘cat./Desktop/Desert/cake’: No such file or directory
+find: ‘cat./Desktop/Desert/cookie’: No such file or directory
+find: ‘cat./Desktop/Desert/pie’: No such file or directory
+find: ‘cat./Desktop/tomato.js’: No such file or directory
+find: ‘cat./Desktop/VEGETABLE/purples.txt’: No such file or directory
+find: ‘cat./favFlavors3.txt’: No such file or directory
+find: ‘cat./favFlavors4.txt’: No such file or directory
+find: ‘cat./orange.png’: No such file or directory
+find: ‘cat./red.pdf’: No such file or directory
+find: ‘cat./squash.txt’: No such file or directory
+aliza@DESKTOP-aliza:~$ ls -l
+total 0
+-rw-r--r-- 1 aliza aliza   0 Oct  4 11:33 7
+drwxr-xr-x 1 aliza aliza 512 Oct  2 13:39 BLAHBlah
+drwxr-xr-x 1 root  root  512 Oct  3 13:03 Desktop
+-rw-r--r-- 1 aliza aliza   0 Oct  4 10:03 app.css
+-rw-r--r-- 1 aliza aliza   0 Oct  4 10:03 app.html
+-rw-r--r-- 1 aliza aliza   0 Oct  4 10:03 app.js
+-rw-r--r-- 1 aliza aliza   0 Oct  4 10:03 app.py
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:46 apple
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:52 apple.pdf
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:47 berries.txt
+drwxr-xr-x 1 root  root  512 Oct  4 10:57 blue
+drwxr-xr-x 1 root  root  512 Oct  4 10:57 choclate
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:48 color.txt
+drwxr-xr-x 1 root  root  512 Oct  4 11:02 favFlavors.txt
+drwxr-xr-x 1 root  root  512 Oct  4 11:05 favFlavors2.txt
+-rw-r--r-- 1 aliza aliza  16 Oct  4 11:16 favFlavors3.txt
+-rw-r--r-- 1 aliza aliza   0 Oct  4 11:15 favFlavors4.txt
+drwxr-xr-x 1 root  root  512 Oct  4 10:57 green
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 orange.png
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 plant
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 red.pdf
+-rw-r--r-- 1 aliza aliza   0 Oct  2 13:50 squash.txt
+drwxr-xr-x 1 root  root  512 Oct  4 10:57 strwberry
+drwxr-xr-x 1 root  root  512 Oct  4 10:57 white
+drwxr-xr-x 1 aliza aliza 512 Oct  2 12:47 wildlife
+aliza@DESKTOP-aliza:~$  find  -type f -size +10K -exec ls-l {}\;
+find: invalid -size type `K'
+aliza@DESKTOP-aliza:~$ find  -type f -size +100K -exec ls-l {}\;
+find: invalid -size type `K'
+aliza@DESKTOP-aliza:~$ find  -type f -size +100k-exec ls-l {}\;
+find: Invalid argument `+100k-exec' to -size
+aliza@DESKTOP-aliza:~$ find  -type f -size +100k -exec ls-l {}\;
+find: missing argument to `-exec'
+aliza@DESKTOP-aliza:~$ find . -type f -size +100k -exec ls -l {} \;
